@@ -1,0 +1,59 @@
+1. #GOAL AND STEP OF IT'S IMPLEMENTATION:
+Verification of the correctness of the flight and hotel search engine operation in https://wizzair.com/pl-pl#/
+-------------------------------------------------- -----------------------
+2. #TESTER:
+Wojciech Richter
+-------------------------------------------------- -----------------------
+3. #START:
+04/03/2019
+-------------------------------------------------- -----------------------
+4. # DURATION:
+45min
+-------------------------------------------------- -----------------------
+5. # ENVIRONMENT:
+Google Chrome
+-------------------------------------------------- -----------------------
+6. #SYSTEM INFORMATION
+ Time of this report: 4/3/2019, 20:01:06
+               Operating System: Windows 10 Home 64-bit (10.0, Build 17134) (17134.rs4_release.180410-1804)
+                 Language: English (Regional Setting: Polish)
+      System Manufacturer: Dell Inc.
+             System Model: Inspiron 5770
+                     BIOS: 1.1.8 (type: UEFI)
+                Processor: Intel (R) Core (TM) i7-8550U CPU @ 1.80GHz (8 CPUs), ~ 2.0GHz
+                   Memory: 8192MB RAM
+      Available OS Memory: 8090MB RAM
+                Page File: 7989MB used, 2404MB available
+              Windows Dir: C: \ WINDOWS
+          DirectX Version: DirectX 12
+      DX Setup Parameters: Not found
+         User DPI Setting: 96 DPI (100 percent)
+       DPI Setting System: 96 DPI (100 percent)
+          DWM DPI Scaling: Disabled
+                 Miracast: Available, with HDCP
+Microsoft Graphics Hybrid: Supported
+           DxDiag Version: 10.00.17134.0001 64bit Unicode
+-------------------------------------------------- -----------------------
+7. #AREA:
+- Verification of recorded dates of registration
+- Verification of standard dates and cities of correct cities and hotels
+- Verification of the reaction to entering special characters
+- Verification of the reaction to search for html codes
+- Verification of reactions to long strings
+- Verification of the ad rotator
+
+-------------------------------------------------- -----------------------
+8. #GENERAL NOTES:
+
+-------------------------------------------------- -----------------------
+9. #DEFECTS:
+- The calendar in "Zameldowanie" allows you to choose a day earlier than the current one, and after clicking in the search in the example place transfers to the booking.com website and orders to change the date to the current one. (b1)
+- "Cel podró¿y / nazwa hotelu" allows you to enter a special character and transfer it to the booking.com page by changing this sign to a different one. (b2)
+- Typing into the "Cel podró¿y / nazwa hotelu" long strings caused the server to hang on booking.com (b3)
+- Typing in the "Cel podró¿y / nazwa hotelu" of a long text in a specific cyrillic language has suspended the server (b4)
+- One advertisement in the ad rotator does not transfer to the subpage, this is suggested by the cursor (b5)
+-------------------------------------------------- -----------------------
+10. #DISCOVERIES::
+
+-------------------------------------------------- -----------------------
+11. # ATTACHMENTS
